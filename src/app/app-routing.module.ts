@@ -9,16 +9,6 @@ import { NoPageFoundComponent } from './shared/no-page-found/no-page-found.compo
 import { RegisterComponent } from './login/register.component';
 
 const routes: Routes = [
-  {
-    path:'',
-    component: PagesComponent,
-    children: [
-      {path:'dashboard', component:DashboardComponent},
-      {path:'progress', component:ProgressComponent},
-      {path:'graficas', component:GraficasComponent},
-      {path:'', redirectTo: '/dashboard', pathMatch: 'full'}
-    ]
-  },
   {path:'login', component:LoginComponent},
   {path:'register', component:RegisterComponent},
   {path:'**', component:NoPageFoundComponent, pathMatch:'full'}
