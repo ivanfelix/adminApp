@@ -11,6 +11,7 @@ import { PagesRoutingModule } from './pages-routing';
 import { SharedModule } from '../shared/shared.module';
 
 import { ChartsModule } from 'ng2-charts';
+import { AccountSettingsComponent } from './account-settings/account-settings.component';
 
 @NgModule({
   imports: [
@@ -30,7 +31,8 @@ import { ChartsModule } from 'ng2-charts';
     ProgressComponent,
     PagesComponent,
     GraficasComponent,
-    GraficoDonaComponent
+    GraficoDonaComponent,
+    AccountSettingsComponent
   ]
 })
 export class PagesModule { }
